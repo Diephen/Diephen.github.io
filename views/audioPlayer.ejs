@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music</title>
+ <link rel='stylesheet' href='/stylesheets/YiwenAudio.css' />
+ <script src="/javascripts/jquery-1.4.1.min.js"></script>
+ <script src="/javascripts/jquery.rotate.js"></script> 
+ <script src="/javascripts/lyrics.js"></script>
+ <script src="/javascripts/YiwenAudio.js"></script>
+
+</head>
+
+<body>
+  <h1 class = "logo"> Music</h1>
+  <div class = "MixTape">MixedTape</div>
+  <div class = "NowPlaying">NowPlaying</div>
+  <div class = "Line"></div>
+  <div class = "Line-btm"></div>
+  <div class = "myInfo">
+    <div class = "myName">- DAI YIWEN -</div>
+    <div class = "myEmail">- daiyw1992@gmail.com -</div>
+    <div class = "myMajor">-Digital Media Technology-</div>
+    <div class = "myUni">-Zhejiang University-</div>
+  </div>
+
+
+  <audio id="myMusic" > </audio>
+  <input id="PauseTime"  type="hidden" />
+
+  <div>
+    <canvas id = "myCanvas" class = "Spinning"></canvas>
+
+  </div>
+
+  
+  <div class="MusicBox" >
+
+    <!-- <div id="HoverControl" class = "HoverControl"></div> -->
+    <div id="HoverController" class = "HoverController">
+        <div id="MainControl" class="MainControl" ></div>
+        <div class="Previous" ></div>
+        <div class="Next" ></div>
+
+
+    </div>
+    <div id="HB" class = "HB"></div>
+
+
+
+    <img id = "lw" class = "LeftWheel" />
+    <img id = "rw" class = "RightWheel" />
+
+
+    <div class="ProcessControl">
+       <div class="SongName">Yiwen's Playlist!</div>  
+       <div class="SongTime">00:00&nbsp;|&nbsp;00:00</div>
+       <div class="Process" ></div>
+       <div class="ProcessYet"></div>
+    </div>
+
+    <div class="VoiceEmp"></div>
+    <div class="VoidProcess" ></div>
+    <div class="VoidProcessYet" ></div>
+    <div class="VoiceFull" ></div>
+    <!-- <div class="ShowMusicList" ></div> -->
+  </div>
+
+  <div class = "NowPlay" id = "NowPlay"></div>
+  <div class = "UppBlur" id = "UppBlur"></div>
+  <div class = "BtmBlur" id = "BtmBlur"></div>
+
+
+
+
+ 
+<!--    <div class = "NP-bck"></div> -->
+  
+  <div class = "SrcUp" id = "SrcUp"></div>
+  <div class = "SrcDown" id = "SrcDown"></div>
+
+  <div class="MusicList" id = "MusicList">
+
+  </div>
+  
+
+
+</body>
+
+</html>
+
+

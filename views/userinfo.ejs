@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Information</title>
+ <link rel='stylesheet' href='/stylesheets/UserInfo.css' />
+ <script src="/javascripts/jquery-1.4.1.min.js"></script>
+ <script src="/javascripts/popout.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <div id = "edit" class = "edit"></div> 
+
+  <div id = "infobox" class = "infobox">
+    <div id = "mask" class = "mask"></div>
+    
+    <div id = "submitBtn" class = "submitBtn">提  交</div>
+    <div id = "cancelBtn" class = "cancelBtn">取  消</div>
+    <div id = "quitBtn" class = "quitBtn" ><img src = "/images/infoicon/close.png"style = "width:25px;height:25px"/></div>
+
+
+
+    <form id = "userInfoForm" action = "" method = "post">
+
+    <div id = "info_edit" class = "info_edit"> 编辑 
+      <img src = "/images/infoicon/edit.png" style = "position:absolute;left:2px;width:15px; height:15px">
+    </div>
+
+    <div id = "u_photo" class = "u_photo">
+     
+     <!-- the image src should be default img url -->
+        <img class = "headshot" id = "hs_url" name = "photoURL"src = "/music/024.png"/> 
+        <div id = "headshot_upload" class = "headshot_upload"> 上传头像 </div>
+       
+
+    </div> 
+
+    <div id = "u_nick" class = "row">
+      <div class = "label">昵称</div>
+      <input id = "input_nick" class = "input_nick" type = "text" name = "input_nick"/>     
+    </div>
+
+    <div id = "u_name" class = "row">
+      <div class = "label">真实姓名</div>
+      <input id = "input_name"class = "input_name" type = "text" name = "input_name"/>
+    </div>
+
+    <div id = "u_certf" class = "row">
+     
+      <div class = "label">认证状态</div>
+     <!--  <input id = "input_certf"class = "input_certf" type = "text" name = "input_certf" value = "未认证"/> -->
+      <img class = "input_certf_icon" src = "/images/infoicon/uncertificated.png"/>
+      <div id = "input_certf" class = "input_certf">未认证</div>
+      <div class = "input_certf_btn">立即认证</div>
+    </div>
+
+    <div id = "u_sex" class = "row">
+      <div class = "label">性别</div>
+      <div class = "male">男生</div>
+      <img class = "male_icon" src = "/images/infoicon/boy.png"/>
+      
+      <div class = "female">女生</div>
+      <img class = "female_icon" src = "/images/infoicon/girl.png"/>
+      
+      <input id = "input_male"class = "input_male" name = "input_male" type = "radio"/>
+      <input id = "input_female" class = "input_female" name = "input_female" type = "radio"/>    
+    </div>
+
+    <div id = "u_loc" class = "row">
+      <div class = "label">所在地</div>
+      <input id = "input_loc"class = "input_loc" name = "input_location" type = "text"/>     
+    </div>
+
+    <div id = "u_email" class = "row">
+      <div class = "label">Email</div>
+      <input id = "input_email"class = "input_email" name = "input_email" type = "email"/>
+    </div>
+
+ <!--    <div id = "u_pwd" class = "row">
+      <div class = "label">Password</div>
+      showing pwd or not
+      <input class = "input_pwd" name = "u_pwd" type = "text"/>  
+    </div>
+ -->
+    <div id = "u_birth" class = "row">
+      <div class = "label">生日</div>
+      <input id= "input_birth"class = "input_birth" name = "input_birth" type = "date"/>    
+    </div>
+
+    <div id = "u_cell" class = "row">
+      <div class = "label">手机</div>
+      <!-- adding check for invalid number -->
+      <input id = "input_cell"class = "input_cell" name = "input_cell" type = "text"/>  
+    </div>
+
+
+  </form>
+
+
+
+  </div>
+
+  
+
+
+  </div>
+ 
+
+
+</body>
+
+</html>
+
+
